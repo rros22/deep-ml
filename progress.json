@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T11:20:27.147Z",
+  "generated_at": "2026-11-14T11:20:28.905Z",
   "items": {
     "problem:10": {
       "kind": "problem",
@@ -26,6 +26,45 @@
       "last_pushed_at": "2026-11-13T22:13:42.702Z",
       "language": "python",
       "lines": 8
+    },
+    "problem:1": {
+      "kind": "problem",
+      "id": "1",
+      "title": "Matrix-Vector Dot Product",
+      "difficulty": "easy",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/1",
+      "path": "problems/0001-matrix-vector-dot-product",
+      "first_solved_at": "2026-11-14T10:31:57.224Z",
+      "last_pushed_at": "2026-11-14T10:31:57.224Z",
+      "language": "python",
+      "lines": 17
+    },
+    "problem:2": {
+      "kind": "problem",
+      "id": "2",
+      "title": "Transpose of a Matrix",
+      "difficulty": "easy",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/2",
+      "path": "problems/0002-transpose-of-a-matrix",
+      "first_solved_at": "2026-11-14T10:41:23.494Z",
+      "last_pushed_at": "2026-11-14T10:41:23.494Z",
+      "language": "python",
+      "lines": 15
+    },
+    "problem:9": {
+      "kind": "problem",
+      "id": "9",
+      "title": "Matrix times Matrix ",
+      "difficulty": "medium",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/9",
+      "path": "problems/0009-matrix-times-matrix",
+      "first_solved_at": "2026-11-14T10:52:08.365Z",
+      "last_pushed_at": "2026-11-14T10:52:08.365Z",
+      "language": "python",
+      "lines": 18
     }
   }
 }
