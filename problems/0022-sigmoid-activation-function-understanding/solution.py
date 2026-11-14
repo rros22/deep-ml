@@ -3,8 +3,7 @@ import math
 def sigmoid(z: float) -> float:
     #Your code here
     # Numerically stable version
-    if z <= -1000:
-        return 0
+    if z > 0:
+        return round(1/(1+math.exp(-z)), 4)
     else:
-        result = 1 / (1 + math.exp(-z))
-        return round(result, 4)
+        return round(math.exp(z)/(1+math.exp(z)), 4)
