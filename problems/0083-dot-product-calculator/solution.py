@@ -15,4 +15,5 @@ def calculate_dot_product(vec1, vec2):
     if len(vec2) != m:
         return -1
     
-    return sum(i*j for i,j in zip(vec1, vec2))
+    # return sum(i*j for i,j in zip(vec1, vec2))
+    return np.dot(vec1, vec2)
