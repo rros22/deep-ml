@@ -30,7 +30,7 @@ def gradient_descent(X, y, weights, learning_rate, n_epochs, batch_size=1, metho
     
     elif method == 'mini_batch':
         # 1. First partition the dataset into batches
-        if batch_size < 0:
+        if batch_size <= 0:
             print("Batch size needs to be greater than zero")
             return weights
 
