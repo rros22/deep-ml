@@ -1,7 +1,11 @@
 import numpy as np
 
 def softmax(scores: list[float]) -> list[float]:
-    # Your code here
-    scores = np.array(scores)
+    scores = np.asarray(scores, dtype=float)
     max_score = scores.max()
-    return np.exp(scores - max_score) / sum(np.exp(scores - max_score))
+
+    # Shift scores for numerical stability.
+    exp_scores = np.exp(scores - max_score)
+
+    # Normalize probabilities and return a Python list.
+    return (exp_scores / exp_scores.sum()).tolist()
