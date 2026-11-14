@@ -16,36 +16,42 @@ def gradient_descent(X, y, weights, learning_rate, n_epochs, batch_size=1, metho
     Returns:
         Optimized weights
     """
-    # Your code here
-    # Gradient function
+    weights = np.array(weights, dtype=float, copy=True)
+
     def grad(Xb, yb, weights):
-        # k = # of training examples 
+        """Compute the MSE gradient over the current batch."""
         k = Xb.shape[0]
-        return 2/k*Xb.T@(Xb@weights - yb)
 
-    if method == "batch":
-        # Use the full dataset
+        # Xb @ weights gives predictions; subtract yb for residuals.
+        # Xb.T maps residuals back to the feature/weight dimension.
+        return (2 / k) * (Xb.T @ (Xb @ weights - yb))
+
+    if method == 'batch':
+        # One update per epoch using all observations.
         for _ in range(n_epochs):
-            weights -= learning_rate*grad(X,y,weights)
-    
+            weights -= learning_rate * grad(X, y, weights)
+
     elif method == 'mini_batch':
-        # 1. First partition the dataset into batches
         if batch_size <= 0:
-            print("Batch size needs to be greater than zero")
-            return weights
+            raise ValueError("batch_size must be positive")
 
-        batch_indices = range(0, len(X), batch_size)
-
+        # Sequential batches; the final batch may be smaller.
         for _ in range(n_epochs):
-            for i in batch_indices:
-                Xb, yb = X[i:i + batch_size], y[i:i + batch_size]
-                weights -= learning_rate*grad(Xb,yb,weights)
-    
+            for i in range(0, len(X), batch_size):
+                Xb = X[i:i + batch_size]
+                yb = y[i:i + batch_size]
+                weights -= learning_rate * grad(Xb, yb, weights)
+
     elif method == 'stochastic':
+        # One update per observation, without shuffling.
         for _ in range(n_epochs):
             for i in range(len(X)):
-                weights -= learning_rate*grad(X[i:i+1], y[i:i+1], weights)
-            
+                # Slicing preserves the 2D X and 1D y shapes.
+                weights -= learning_rate * grad(
+                    X[i:i + 1], y[i:i + 1], weights
+                )
+
+    else:
+        raise ValueError(f"Unknown gradient descent method: {method}")
 
     return weights
-
