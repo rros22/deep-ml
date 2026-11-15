@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:39:38.426Z",
+  "generated_at": "2026-11-15T13:46:23.073Z",
   "items": {
     "problem:10": {
       "kind": "problem",
@@ -283,7 +283,7 @@
       "url": "https://www.deep-ml.com/problems/52",
       "path": "problems/0052-implement-recall-metric-in-binary-classification",
       "first_solved_at": "2026-11-15T13:39:37.903Z",
-      "last_pushed_at": "2026-11-15T13:39:37.903Z",
+      "last_pushed_at": "2026-11-15T13:46:22.552Z",
       "language": "python",
       "lines": 24
     }
