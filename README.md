@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**15** solved · 15 problems · 0 labs · 0 math
+**16** solved · 16 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -13,6 +13,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | | Difficulty | Solved | |
 | --- | --- | --- | --- |
 | [Binary Classification with Logistic Regression](https://www.deep-ml.com/problems/104) | easy | 2026-11-15 | [solution](problems/0104-binary-classification-with-logistic-regression) |
+| [Calculate Accuracy Score](https://www.deep-ml.com/problems/36) | easy | 2026-11-15 | [solution](problems/0036-calculate-accuracy-score) |
 | [Calculate Covariance Matrix](https://www.deep-ml.com/problems/10) | easy | 2026-11-14 | [solution](problems/0010-calculate-covariance-matrix) |
 | [Create a Float Tensor from a Python List](https://www.deep-ml.com/problems/880) | easy | 2026-11-14 | [solution](problems/0880-create-a-float-tensor-from-a-python-list) |
 | [Dot Product Calculator](https://www.deep-ml.com/problems/83) | easy | 2026-11-14 | [solution](problems/0083-dot-product-calculator) |
