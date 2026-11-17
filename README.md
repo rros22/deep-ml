@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**34** solved · 34 problems · 0 labs · 0 math
+**35** solved · 35 problems · 0 labs · 0 math
 
 ![Coverage](./coverage.svg)
 
@@ -12,6 +12,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 
 | | Difficulty | Solved | |
 | --- | --- | --- | --- |
+| [Adagrad Optimizer](https://www.deep-ml.com/problems/145) | easy | 2026-11-17 | [solution](problems/0145-adagrad-optimizer) |
 | [Binary Classification with Logistic Regression](https://www.deep-ml.com/problems/104) | easy | 2026-11-15 | [solution](problems/0104-binary-classification-with-logistic-regression) |
 | [Calculate 2x2 Matrix Inverse](https://www.deep-ml.com/problems/8) | easy | 2026-11-16 | [solution](problems/0008-calculate-2x2-matrix-inverse) |
 | [Calculate Accuracy Score](https://www.deep-ml.com/problems/36) | easy | 2026-11-15 | [solution](problems/0036-calculate-accuracy-score) |
